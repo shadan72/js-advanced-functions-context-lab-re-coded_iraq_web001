@@ -4,7 +4,10 @@ const createEmployeeRecord=(arr)=>{
 }
 const createEmployeeRecords=(arr)=>{
   
-  return  arr.map(emp =>createEmployeeRecord(emp) );
+  
+  const newArr=[];
+   arr.map(emp =>newArr.push(createEmployeeRecord(emp)) );
+   return newArr;
 };
 
 const createTimeInEvent=(dateIn)=>{
