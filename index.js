@@ -15,8 +15,7 @@ const TimeDate=dateIn.split(" ")
  this.timeInEvents.push({type:"TimeIn" , date:TimeDate[0], hour:parseInt(TimeDate[1],10)})
   return this
 }
-
-const createTimeOutEvent=(dateOut)=>{
+function createTimeOutEvent(dateOut){
 const TimeDate=dateOut.split(" ")
 this.timeOutEvents.push({type:"TimeOut" , date:TimeDate[0], hour:parseInt(TimeDate[1])})
 return this
