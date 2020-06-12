@@ -4,7 +4,7 @@ const createEmployeeRecord=(arr)=>{
 }
 const createEmployeeRecords=(arr)=>{
   
-  return  arr.map(emp =>newArr.push(createEmployeeRecord(emp)) );
+  return  arr.map(emp =>createEmployeeRecord(emp) );
    return newArr;
 };
 
