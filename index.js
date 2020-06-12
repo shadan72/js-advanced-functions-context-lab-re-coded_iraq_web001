@@ -4,9 +4,7 @@ const createEmployeeRecord=(arr)=>{
 }
 const createEmployeeRecords=(arr)=>{
   
-  
-  const newArr=[];
-   arr.map(emp =>newArr.push(createEmployeeRecord(emp)) );
+  return  arr.map(emp =>newArr.push(createEmployeeRecord(emp)) );
    return newArr;
 };
 
