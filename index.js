@@ -35,7 +35,7 @@ const findEmployeeByFirstName=(srcArray,firstName)=>{
   
   return srcArray.find(ele => ele.firstName === firstName)
 }
-const calculatePayroll=(arr)=>{
+function calculatePayroll(arr){
   return arr.reduce((acc, curr)=>{
     return acc + allWagesFor(curr)
   },0)
