@@ -10,7 +10,7 @@ const createEmployeeRecords=(arr)=>{
    return newArr;
 };
 
-const createTimeInEvent=(dateIn)=>{
+function createTimeInEvent(dateIn){
 const TimeDate=dateIn.split(" ")
  this.timeInEvents.push({type:"TimeIn" , date:TimeDate[0], hour:parseInt(TimeDate[1],10)})
   return this
