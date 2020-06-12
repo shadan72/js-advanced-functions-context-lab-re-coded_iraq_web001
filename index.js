@@ -37,7 +37,7 @@ const findEmployeeByFirstName=(srcArray,firstName)=>{
 }
 function calculatePayroll(arr){
   return arr.reduce((acc, curr)=>{
-    return acc + allWagesFor(curr)
+    return acc + allWagesFor.call(curr)
   },0)
   
 }
