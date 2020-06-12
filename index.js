@@ -5,7 +5,6 @@ const createEmployeeRecord=(arr)=>{
 const createEmployeeRecords=(arr)=>{
   
   return  arr.map(emp =>createEmployeeRecord(emp) );
-   return newArr;
 };
 
 const createTimeInEvent=(dateIn)=>{
