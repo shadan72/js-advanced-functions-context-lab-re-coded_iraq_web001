@@ -21,17 +21,16 @@ this.timeOutEvents.push({type:"TimeOut" , date:TimeDate[0], hour:parseInt(TimeDa
 return this
   
 }
-
-const hoursWorkedOnDate=(date)=>{
-  
+function hoursWorkedOnDate(date){
   const timeIn=this.timeInEvents.find(ele => ele.date === date)
   const timeOut=this.timeOutEvents.find(ele => ele.date === date)
    let result=(timeOut.hour - timeIn.hour)/100
    return result
   }
-  const wagesEarnedOnDate=(date)=>{
+  function wagesEarnedOnDate(date){
   return hoursWorkedOnDate.call(this,date)* this.payPerHour
 }
+
 const findEmployeeByFirstName=(srcArray,firstName)=>{
   
   return srcArray.find(ele => ele.firstName === firstName)
